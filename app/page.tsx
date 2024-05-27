@@ -4,10 +4,9 @@ import Header from "./header";
 import Main from "./main";
 import { FontSizeProvider } from "./context/FontSizeContext";
 import { ThemeProvider } from "./context/ThemeContext";
-import type { NextPage } from "next";
 import VLibras from "vlibras-nextjs";
 
-export const Home: NextPage = () => {
+export default function Home() {
   return (
     <FontSizeProvider>
       <ThemeProvider>
@@ -20,5 +19,3 @@ export const Home: NextPage = () => {
     </FontSizeProvider>
   );
 }
-
-export default Home
